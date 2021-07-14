@@ -2,6 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Teko, sans-serif;
+    font-size: 16px;
     width: 100vw;
 }
 header {
@@ -23,6 +24,7 @@ form input {
     border: 1px solid #4148DB;
     font-family: Teko, sans-serif;
     margin-right: .5rem;
+    font: 1rem;
 }
 form button {
     height: 40px;
