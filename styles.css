@@ -24,7 +24,7 @@ form input {
     border: 1px solid #4148DB;
     font-family: Teko, sans-serif;
     margin-right: .5rem;
-    font: 1rem;
+    font-size: 1rem;
 }
 form button {
     height: 40px;
