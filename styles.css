@@ -49,6 +49,10 @@ form button {
     #playerInfo {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    form button, form input {
+        width: 75%;
+        height: 3rem;
+    }
 }
 @media screen and (max-width: 500px) {
     #playerInfo {
