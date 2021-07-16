@@ -24,17 +24,9 @@ function loadTeams() {
     });
     div.append(select);
 }
-document.querySelector('#by-team-button').addEventListener('click', loadTeams);
+document.addEventListener('DOMContentLoaded', loadTeams);
 
 function loadTeamStats() {
-    const stats = [
-        {
-        season:2020, wins: 40, losses: 20, runs: 3.04, era: 4.04
-        },
-        {
-        season:2020, wins: 40, losses: 20, avg: .250, era: 4.04
-        }
-    ]
     const teamSelect = document.querySelector('#team-select').value;
     const table = document.querySelector('#team-stats');
     table.classList.toggle("notActive");
@@ -50,7 +42,6 @@ function loadTeamStats() {
         })
             .then(response => response.json())
             .then( year => {
-                console.log(year.response.games.played.all);
                     if (year.response.games.played.all !== 0) {
                         const wins = year.response.games.wins.all.total;
                         const losses = year.response.games.loses.all.total;
