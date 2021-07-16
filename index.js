@@ -38,6 +38,7 @@ function fetchId() {
             if (playerPosition === 'P') {
                 position.style.visibility = "visible";
             }else {
+                position.value = 'hitter';
                 position.style.visibility = "hidden";
             }
 
@@ -63,6 +64,13 @@ function fetchId() {
 }
 document.querySelector('#submit').addEventListener('click', fetchId);
 document.querySelector('#position').addEventListener('change', fetchId);
+document.getElementById("player_name").onkeypress = function(e) {
+    var key = e.charCode || e.keyCode || 0;     
+    if (key == 13) {
+      e.preventDefault();
+      fetchId();
+    }
+  }
 
 function loadInfo(name, nickName, birthCountry, birthState, birthCity, position, throws, height, age) {
     const div = document.querySelector('#playerInfo');

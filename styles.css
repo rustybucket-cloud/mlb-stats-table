@@ -6,7 +6,8 @@ body {
     width: 100vw;
 }
 header {
-    background-color:#4148DB;
+    background-color: #6e74eb;
+    color: #DEAC18;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -16,6 +17,45 @@ header h1 {
     margin: 0 0 0 2vw;
 }
 
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 85vh;
+}
+
+nav {
+    background-color: #6FB0F0;
+}
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+nav li {
+    margin: 0 0 1vw 0;
+    width: 100%;
+}
+nav a {
+    color: #F0D42C;
+    display: block;
+    height: 100%;
+    width: calc(100% - 2vw);
+    font-size: 2rem;
+    padding-left: 2vw;
+    text-decoration: none;
+}
+nav a:hover, .active {
+    background-color: #F0D42C;
+    color: #6FB0F0;
+}
+
+main h1 {
+    margin: 0;
+    margin-left: 2vw;
+}
+main h2 {
+    margin: 0;
+}
 
 form label, form input {
     display: block;
@@ -33,6 +73,38 @@ form select {
 form button {
     height: 40px;
     font-family: Teko, sans-serif;
+}
+.sort-by {
+    margin:0;
+}
+
+
+.sort-by, #by-team, #by-year, #league-leader-search {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#league-leader-search input, #league-leader-search select, #league-leader-search button{
+    border: 1px solid #4148DB;
+    font-family: Teko, sans-serif;
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+    #ll-table {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+main table {
+    width: 50vw;
+}
+span {
+    font-size: 1.3rem;
+}
+
+.notActive {
+    display: none;
 }
 
 .namePosition {
@@ -99,4 +171,17 @@ table th, table td {
     padding: 5px;
     margin: 0;
     border: 0;
+}
+
+footer {
+    background-color: #6e74eb;
+    margin: 0;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DEAC18;
+}
+footer p {
+    margin: 0;
 }

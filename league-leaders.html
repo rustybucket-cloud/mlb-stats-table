@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Stats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="league-leaders.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MLB Career Stats</h1>
+    </header>
+    <div class="content-wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">Player Stats</a></li>
+            <li><a href="teams.html">Team Stats</a></li>
+            <li><a href="league-leaders.html" class="active">League Leaders</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>League Leaders</h1>
+        <div id="league-leader-search"> 
+            <label for="stat-select"><span>Statistic</span>
+                <select name="stat-select" id="stat-select">
+                    <option value="ab">AB</option>
+                    <option value="h">H</option>
+                    <option value="hr">HR</option>
+                    <option value="bb">BB</option>
+                    <option value="avg">AVG</option>
+                    <option value="so">SO</option>
+                    <option value="w">W</option>
+                    <option value="era">ERA</option>
+                </select>
+            </label>
+            <label for="ll-year-select"><span>Year</span>
+                <input type="number" id="ll-year-select" style="width: 3rem;">
+            </label>
+            <button id="ll-search">Search</button>
+        </div>
+        <table id="ll-table" cellspacing="0">
+            
+        </table>
+    </main>
+    
+    </div>
+    <footer>
+        <p>Jacob Patton &copy; 2021</p>
+    </footer>
+</body>
+</html>

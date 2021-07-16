@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="index.js" defer></script>
+    <script type="module" src="team-stats.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,32 +18,33 @@
     <div class="content-wrapper">
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Player Stats</a></li>
-            <li><a href="teams.html">Team Stats</a></li>
+            <li><a href="index.html">Player Stats</a></li>
+            <li><a href="teams.html" class="active">Team Stats</a></li>
             <li><a href="league-leaders.html">League Leaders</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Player Stats</h1>
-        <form action="">
-            <label for="player_name">Player Name:</label>
-            <div class="namePosition">
-                <input type="text" id="player_name">
-                <select id="position">
-                    <option value="default">Select One</option>
-                    <option value="position-player">Hitting</option>
-                    <option value="P">Pitching</option>
-                </select>
-            </div>
-            <button type="button" id="submit">Show Stats</button>
-        </form>
-        <div id="stats">
-            <div id="playerInfo">
-            </div>
-            <table id="table" cellspacing="0">
+        <h1>Team Stats</h1>
+        <div class="sort-by">
+            <button id="by-team-button">By Team</button>
+            <button id="by-year-button">By Year</button>
+        </div>
+        <div id="by-team" class="notActive">
+            <div id="team-search"></div>
+            <table id="team-stats" cellspacing="0" class="notActive" style="margin-left: 0;">
+                <tr>
+                    <th>Season</th>
+                    <th>Record</th>
+                    <th>Runs/Game</th>
+                    <th>ERA</th>
+                </tr>
             </table>
         </div>
+        <div id="by-year">
+            <label for="year" id="year-label"></label>
+        </div>
     </main>
+    
     </div>
     <footer>
         <p>Jacob Patton &copy; 2021</p>

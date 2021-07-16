@@ -1,0 +1,33 @@
+const teams = [
+    {id: 2, name:'Arizona Diamondbacks', league: 'National', division: 'West'},
+    {id: 3, name: 'Atlanta Braves', league: 'National', division: 'East'},
+    {id: 4, name: 'Baltimore Orioles', league: 'American', division: 'East'},
+    {id: 5, name: 'Boston Red Sox', league: 'American', division: 'East'},
+    {id: 6, name: 'Chicago Cubs', league: 'National', division: 'Central'},
+    {id: 7, name: 'Chicago White Sox', league: 'American', division: 'Central'},
+    {id: 8, name: 'Cincinnati Reds', league: 'National', division: 'Central'},
+    {id: 10, name: 'Colorado Rockies', league: 'National', division: 'West'},
+    {id: 12, name: 'Detroit Tigers', league: 'American', division: 'Central'},
+    {id: 15, name: 'Houston Astros', league: 'American', division: 'West'},
+    {id: 16, name: 'Kansas City Royals', league: 'American', division: 'Central'},
+    {id: 17, name: 'Los Angeles Angels', league: 'American', division: 'West'},
+    {id: 18, name: 'Los Angeles Dodgers', league: 'National', division: 'West'},
+    {id: 19, name: 'Miami Marlins', league: 'National', division: 'East'},
+    {id: 20, name: 'Milwaukee Brewers', league: 'National', division: 'Central'},
+    {id: 22, name: 'Minnesota Twins', league: 'American', division: 'Central'},
+    {id: 24, name: 'New York Mets', league: 'National', division: 'East'},
+    {id: 25, name: 'New York Yankees', league: 'American', division: 'East'},
+    {id: 26, name: 'Oakland Athletics', league: 'American', division: 'West'},
+    {id: 27, name: 'Philadelphia Phillies', league: 'National', division: 'East'},
+    {id: 28, name: 'Pittsburgh Pirates', league: 'National', division: 'East'},
+    {id: 30, name: 'San Diego Padres', league: 'National', division: 'West'},
+    {id: 31, name: 'San Francisco Giants', league: 'National', division: 'West'},
+    {id: 32, name: 'Seattle Mariners', league: 'American', division: 'East'},
+    {id: 33, name: 'St. Louis Cardinals', league: 'National', division: 'Central'},
+    {id: 34, name: 'Tampa Bay Rays', league: 'American', division: 'East'},
+    {id: 35, name: 'Texas Rangers', league: 'American', division: 'Central'},
+    {id: 36, name: 'Toronto Blue Jays', league: 'American', division: 'East'},
+    {id: 37, name: 'Washington Nationals', league: 'National', division: 'East'}
+]
+
+export default teams;
