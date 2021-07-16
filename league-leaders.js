@@ -29,6 +29,10 @@ function loadLeagueLeaders() {
             .then(response => response.json())
             .then(data => {
                 let row = (position === 'pitching') ? data.leader_pitching_repeater.leader_pitching_mux.queryResults.row : data.leader_hitting_repeater.leader_hitting_mux.queryResults.row;
+                if (row === undefined) {
+                    alert("No data found");
+                    return;
+                }
                 const table = document.querySelector('#ll-table');
                 row.forEach( player => {
                     const name = player.name_display_first_last;
